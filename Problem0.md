@@ -1,4 +1,50 @@
 # Problem 0
+1. code (have also hand in .py file)
+import random<br />
+import time<br />
+
+def OneDie(trials):<br />
+    c1=time.clock()<br />
+    print("="*30)<br />
+    print("One die with 6 sides")<br />
+    print("Number of trials = ", trials)<br />
+
+    sides = 6<br />
+    theo_histogram_occur_times = [0, 0, 0, 0, 0, 0]<br />
+    theo_histogram_frequency= [0, 0, 0, 0, 0, 0]<br />
+    histogram_occur_times = [0, 0, 0, 0, 0, 0]<br />
+    histogram_frequency= [0, 0, 0, 0, 0, 0]<br />
+    print(histogram_occur_times)<br />
+    print(histogram_frequency)<br />
+
+    j = 0<br />
+    r = 0<br />
+    while j < trials :<br />
+        r = int(random.random()*sides) # Faster<br />
+        histogram_occur_times[r] = histogram_occur_times[r] + 1<br />
+        j = j + 1<br />
+        
+    print("histogram_occur_times=",histogram_occur_times)<br />
+    histogram_frequency = [histogram_occur_times[i]/trials for i in range(sides)]<br />
+    print("histogram_frequency=",histogram_frequency)<br />
+
+    for i in range(sides):<br />
+        theo_histogram_occur_times[i] = (1/6)*trials<br />
+        theo_histogram_frequency[i] = 1/6<br />
+        print(i+1, "theo_histogram_occur_times=",theo_histogram_occur_times[i], "theo_histogram_frequency=",theo_histogram_frequency[i])<br />
+        print(i+1, "difference=",histogram_occur_times[i]-theo_histogram_occur_times[i])<br />
+        print(i+1, "ratio=",histogram_occur_times[i]/trials, "ratio difference=",histogram_occur_times[i]/trials- (1/6))<br />
+        
+    c2=time.clock()<br />
+    print("Elapsed time =", c2-c1)<br />
+
+
+OneDie(10)<br />
+OneDie(100)<br />
+OneDie(1000)<br />
+OneDie(10000)<br />
+OneDie(100000)<br />
+OneDie(1000000)<br />
 2. One die with 6 sides<br />
 Number of trials =  100<br />
 [0, 0, 0, 0, 0, 0]<br />
