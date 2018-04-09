@@ -19,29 +19,29 @@ Number of trials =  100<br />
 [0, 0, 0, 0, 0, 0]<br />
 histogram_occur_times= [15, 12, 21, 20, 17, 15]<br />
 histogram_frequency= [0.15, 0.12, 0.21, 0.2, 0.17, 0.15]<br />
-One die with 6 sides<br />
 <br />
+One die with 6 sides<br />
 Number of trials =  1000<br />
 [0, 0, 0, 0, 0, 0]<br />
 [0, 0, 0, 0, 0, 0]<br />
 histogram_occur_times= [167, 175, 187, 163, 155, 153]<br />
 histogram_frequency= [0.167, 0.175, 0.187, 0.163, 0.155, 0.153]<br />
-One die with 6 sides<br />
 <br />
+One die with 6 sides<br />
 Number of trials =  10000<br />
 [0, 0, 0, 0, 0, 0]<br />
 [0, 0, 0, 0, 0, 0]<br />
 histogram_occur_times= [1633, 1688, 1668, 1654, 1739, 1618]<br />
 histogram_frequency= [0.1633, 0.1688, 0.1668, 0.1654, 0.1739, 0.1618]<br />
-One die with 6 sides<br />
 <br />
+One die with 6 sides<br />
 Number of trials =  100000<br />
 [0, 0, 0, 0, 0, 0]<br />
 [0, 0, 0, 0, 0, 0]<br />
 histogram_occur_times= [16727, 16638, 16501, 16678, 16721, 16735]<br />
 histogram_frequency= [0.16727, 0.16638, 0.16501, 0.16678, 0.16721, 0.16735]<br />
-One die with 6 sides<br />
 <br />
+One die with 6 sides<br />
 Number of trials =  1000000<br />
 [0, 0, 0, 0, 0, 0]<br />
 [0, 0, 0, 0, 0, 0]<br />
