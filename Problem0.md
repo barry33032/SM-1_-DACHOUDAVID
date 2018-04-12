@@ -110,5 +110,6 @@ Number of trials =  100000<br />
 mean= 3.99851<br /> variance= 4.0006077798999975<br /> std_dev= 2.000151939203619<br /> theo_mean= 4.0<br /> theo_var= 4.0<br /> theo_std_dev 2.0<br />
 The results are familiar with prediction<br />
 4. Different trials for mean and standard deviation<br />
-mean:45<br />
-standard deviation:25<br />
+Take side=8<br />
+mean:100<br />
+standard deviation:5000<br />
