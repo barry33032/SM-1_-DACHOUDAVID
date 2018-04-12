@@ -37,7 +37,9 @@ def OneDieS(trials, sides):
     #print(sum3)
     theo_var = sum3 - theo_mean**2
     theo_std_dev = math.sqrt(theo_var)
-    print("sides=", sides, "mean=", mean, "variance=", variance, "std_dev=", std_dev, "theo_mean=", theo_mean, "theo_var=", theo_var, "theo_std_dev", theo_std_dev)
+    error = abs(mean - theo_mean)/theo_mean
+    print("sides=", sides, "mean=", mean, "variance=", variance, "std_dev=", std_dev, "theo_mean=", theo_mean, "theo_var=", theo_var, "theo_std_dev", theo_std_dev, "error=", error)
+    
 
     c2=time.clock()
     print("Elapsed time =", c2-c1)
@@ -105,6 +107,7 @@ def trial_number_std_dev(sides):
         variance = sum5/trial2 - mean**2
         std_dev = math.sqrt(variance)
         delta_std_dev = abs(std_dev - theo_std_dev)/theo_std_dev
+        #print(delta_std_dev)
         trial2 = trial2 + 1
     print("trial2=", trial2)
 
