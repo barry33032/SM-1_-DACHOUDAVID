@@ -37,8 +37,9 @@ def OneDieS(trials, sides):
     #print(sum3)
     theo_var = sum3 - theo_mean**2
     theo_std_dev = math.sqrt(theo_var)
-    error = abs(mean - theo_mean)/theo_mean
-    print("sides=", sides, "mean=", mean, "variance=", variance, "std_dev=", std_dev, "theo_mean=", theo_mean, "theo_var=", theo_var, "theo_std_dev", theo_std_dev, "error=", error)
+    error1 = abs(mean - theo_mean)/theo_mean
+    error2 = abs(std_dev - theo_std_dev)/theo_std_dev
+    print("sides=", sides, "mean=", mean, "variance=", variance, "std_dev=", std_dev, "theo_mean=", theo_mean, "theo_var=", theo_var, "theo_std_dev", theo_std_dev, "error_mean=", error1, "error_std_dev=", error2)
     
 
     c2=time.clock()
@@ -119,6 +120,7 @@ def run1():
     OneDieS(10, 8)
     OneDieS(100, 8)
     OneDieS(1000, 8)
+    OneDieS(5000, 8)
     OneDieS(10000, 8)
     OneDieS(100000, 8)
     OneDieS(1000000, 8)
